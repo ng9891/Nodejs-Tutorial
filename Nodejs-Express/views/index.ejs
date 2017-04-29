@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+	<p>This is a new Variable = <%= newVar %></p>
+	
+	<% include templates/header.ejs %>
+	
+	<p><%= points %></p> <!--Local Var in app.js-->
+	
+	<h3><%= videodata.categoryName %></h3> <!--Var in index.js-->
+	<ul>
+		<% videodata.categories.forEach(function (item){ %>
+			<li><a href="https://thenewboston.com/videos_food.php?cat=<%=item.categoryID%>"> <%=item.categoryName%> </a></li>
+				
+		
+		<% }); %>
+	</ul>
+
+	<ul>
+		<% for(var i=0; i <5; i++){ %>
+			<li>Tuna</li>
+		
+		<% } %>
+	</ul>
+	
+  </body>
+</html>
