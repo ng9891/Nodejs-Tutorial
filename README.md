@@ -9,4 +9,8 @@ To use express generator:
   3. Select newly created directory --> "cd myapp"
   3. Install all node_modules --> "npm install"
   4. Run server --> "npm start"
-  5. Open browser and type "http://localhost:3000/"
+  5. Open browser and type "http://localhost:3000
+  
+  
+  
+  FROGS?!
